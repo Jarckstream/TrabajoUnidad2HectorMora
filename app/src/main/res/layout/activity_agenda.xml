@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Agenda"
     android:orientation="vertical"
+    android:background="@mipmap/agenda"
     android:gravity="center">
 
     <Button
