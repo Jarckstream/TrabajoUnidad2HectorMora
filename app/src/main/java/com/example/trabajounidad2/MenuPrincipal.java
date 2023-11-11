@@ -3,7 +3,9 @@ package com.example.trabajounidad2;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -53,5 +55,9 @@ public class MenuPrincipal extends AppCompatActivity implements OnMapReadyCallba
         mMap.addMarker(new MarkerOptions().position(Dentista).title("Centro de atención dental"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(Dentista));
 
+    }
+    public void Agenda (View view){
+        Intent i = new Intent(this, Agenda.class);
+        startActivity(i);
     }
 }
